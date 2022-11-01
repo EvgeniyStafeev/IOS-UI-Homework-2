@@ -2,23 +2,22 @@
 //  TabBarController.swift
 //  Navigation
 //
-//  Created by Татьяна Новичихина on 31.10.2022.
+//  Created by Стафеев Евгений on 31.10.2022.
 //
 
 import UIKit
 
-import UIKit
-
-class TabBarController: UITabBarController() {
+class MainTabBarController: UITabBarController {
 
     let feedVC = FeedViewController()
     let profileVC = ProfileViewController()
     let postVC = PostViewController()
-    var post = Post(title: "Здесь будет пост")
+    var post = Post(title: "Post")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupControllers()
+        
     }
    
     private func setupControllers() {
@@ -35,6 +34,10 @@ class TabBarController: UITabBarController() {
         
         
         viewControllers = [feedNavController, profileNavController]
+        
+        UITabBar.appearance().barTintColor = UIColor.white
+        UITabBar.appearance().backgroundColor = .black
+       
     }
     
 }
