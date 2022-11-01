@@ -2,18 +2,7 @@
 //  ViewController.swift
 //  Navigation
 //
-//  Created by Татьяна Новичихина on 31.10.2022.
+//  Created by Татьяна Новичихина on 01.11.2022.
 //
 
-import UIKit
-
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
-}
-
+import Foundation
