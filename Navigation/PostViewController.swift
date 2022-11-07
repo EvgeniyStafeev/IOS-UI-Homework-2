@@ -2,7 +2,26 @@
 //  PostViewController.swift
 //  Navigation
 //
-//  Created by Татьяна Новичихина on 31.10.2022.
+//  Created by Стафеев Евгений on 31.10.2022.
 //
 
-import Foundation
+import UIKit
+
+class PostViewController: UIViewController {
+    var post = Post(title: "Post")
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .lightGray
+        makeBarItem()
+        
+    }
+    private func makeBarItem() {
+        let barItem = UIBarButtonItem(title: "Дальше", style: .plain, target: self, action: #selector(tapAction))
+        navigationItem.rightBarButtonItem = barItem
+    }
+    @objc private func tapAction() {
+        let infoVC = InfoViewController()
+        infoVC.title = "New"
+        present(infoVC, animated: true)
+    }
+}

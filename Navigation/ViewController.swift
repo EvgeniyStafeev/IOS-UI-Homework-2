@@ -2,7 +2,17 @@
 //  ViewController.swift
 //  Navigation
 //
-//  Created by Татьяна Новичихина on 01.11.2022.
+//  Created by Стафеев Евгений on 01.11.2022.
 //
 
-import Foundation
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .purple
+    }
+
+
+}
