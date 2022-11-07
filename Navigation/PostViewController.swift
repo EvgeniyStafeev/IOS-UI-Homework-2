@@ -22,6 +22,6 @@ class PostViewController: UIViewController {
     @objc private func tapAction() {
         let infoVC = InfoViewController()
         infoVC.title = "New"
-        navigationController?.pushViewController(infoVC, animated: true)
+        present(infoVC, animated: true)
     }
 }
