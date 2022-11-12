@@ -26,13 +26,14 @@ class InfoViewController: UIViewController {
         let alert = UIAlertController(title: "Ошибка", message: "Вернутся обратно?", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Да", style: .default) { _ in
             self.navigationController?.popViewController(animated: true)
+            print("Пользователь нажал Да")
         }
-        let cancelAction = UIAlertAction(title: "Нет", style: .destructive)
+        let cancelAction = UIAlertAction(title: "Нет", style: .destructive) { _ in
+            print("Пользователь нажал Нет")
+        }
         alert.addAction(cancelAction)
         alert.addAction(okAction)
         present(alert, animated: true)
-        print(okAction)
-        print(cancelAction)
     }
         
 }
